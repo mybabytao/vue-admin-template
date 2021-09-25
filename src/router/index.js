@@ -66,7 +66,6 @@ export const constantRoutes = [
         name: '前端日志',
         component: () => import('@/views/log/front/index'),
         meta: { title: '前端日志', icon: 'tree' }
-<<<<<<< HEAD
       },
       {
         path: 'back',
@@ -93,21 +92,6 @@ export const constantRoutes = [
         hidden: true
       }
     
-=======
-      },
-      {
-        path: 'back',
-        name: '后端日志',
-        component: () => import('@/views/log/back/index'),
-        meta: { title: '后端日志', icon: 'tree' }
-      },
-      {
-        path: 'platform',
-        name: '平台日志',
-        component: () => import('@/views/log/platform/index'),
-        meta: { title: '平台日志', icon: 'table' }
-      },
->>>>>>> 5f6de5345b95434899c04b12c64b534bba864e27
     
     ]
   },

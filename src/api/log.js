@@ -7,7 +7,6 @@ export function getLogListPage(query) {
       data: query
     })
   }
-<<<<<<< HEAD
 
 export function getPacketByPath(filePath) {
     return request({
@@ -25,6 +24,3 @@ export function getPacketByPath(filePath) {
       })
      
   }
-=======
-  
->>>>>>> 5f6de5345b95434899c04b12c64b534bba864e27
