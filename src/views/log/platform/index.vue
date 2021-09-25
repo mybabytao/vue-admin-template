@@ -163,7 +163,7 @@
           <router-link :to="{path: '/log/json',query: {filePath: row.cpacketFilepath}}">
             <el-button type="info">查看报文</el-button>
           </router-link>
-          <el-button type="info" @click="getXml(row.cpacketFilepath)">查看xml</el-button>
+          <el-button type="primary" @click="getXml(row.cpacketFilepath)">查看xml</el-button>
           <el-dialog title="报文" :visible.sync="sss" @close='closeDialog'>
             <pre v-highlightjs="xml_show"> 
               <code class="highlight_s"> </code>
