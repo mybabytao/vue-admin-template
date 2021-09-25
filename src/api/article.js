@@ -15,6 +15,7 @@ export function getLogListPage(query) {
     data: query
   })
 }
+<<<<<<< HEAD
 export function getPacketListPage(query) {
   return request({
     url: `/log/getPacketList`,
@@ -30,6 +31,8 @@ export function getXmlPacket(filePath) {
   })
  
 }
+=======
+>>>>>>> 5f6de5345b95434899c04b12c64b534bba864e27
 
 export function fetchArticle(id) {
   return request({
