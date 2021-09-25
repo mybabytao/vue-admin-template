@@ -36,7 +36,6 @@ export const constantRoutes = [
     component: () => import('@/views/login/index'),
     hidden: true
   },
-
   {
     path: '/404',
     component: () => import('@/views/404'),
@@ -56,24 +55,44 @@ export const constantRoutes = [
   },
 
   {
-    path: '/example',
+    path: '/log',
     component: Layout,
-    redirect: '/example/table',
-    name: 'Example',
-    meta: { title: 'Example', icon: 'el-icon-s-help' },
+    redirect: '/log/platform',
+    name: '日志查询',
+    meta: { title: '日志查询', icon: 'el-icon-s-help' },
     children: [
       {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        path: 'front',
+        name: '前端日志',
+        component: () => import('@/views/log/front/index'),
+        meta: { title: '前端日志', icon: 'tree' }
       },
       {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        path: 'back',
+        name: '后端日志',
+        component: () => import('@/views/log/back/index'),
+        meta: { title: '后端日志', icon: 'tree' }
+      },
+      {
+        path: 'platform',
+        name: '平台日志',
+        component: () => import('@/views/log/platform/index'),
+        meta: { title: '平台日志', icon: 'table' }
+      },{
+        path: 'json',
+        name: 'Json',
+        component: () => import('@/views/log/json-editor'),
+        meta: { title: 'Json', icon: 'table' }
+      },
+      {
+        path: 'json/:cpacketFilepath',
+        name: 'json-view',
+        component: () => import('@/views/log/json-editor'),
+        meta: { title: 'json-view', icon: 'dashboard' },
+        hidden: true
       }
+    
+    
     ]
   },
 
