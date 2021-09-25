@@ -15,7 +15,6 @@ export function getLogListPage(query) {
     data: query
   })
 }
-<<<<<<< HEAD
 export function getPacketListPage(query) {
   return request({
     url: `/log/getPacketList`,
